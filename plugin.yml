@@ -13,14 +13,14 @@ commands:
 permissions:
   iprotector:
     description: "Allows access to all iProtector features."
-    default: false
+    default: true
     children:
       iprotector.access:
         description: "Allows access to editing terrain in iProtector areas."
         default: op
       iprotector.command:
         description: "Allows access to all iProtector commands."
-        default: false
+        default: true
         children:
           iprotector.command.area:
             description: "Allows access to the area command."
@@ -31,19 +31,19 @@ permissions:
                 default: op
               iprotector.command.area.pos2:
                 description: "Allows access to the iProtector pos2 subcommand."
-                default: op
+                default: Guest
               iprotector.command.area.create:
                 description: "Allows access to the iProtector create subcommand."
                 default: op
               iprotector.command.area.list:
                 description: "Allows access to the iProtector list subcommand."
-                default: op
+                default: Guest
               iprotector.command.area.flag:
                 description: "Allows access to the iProtector flag subcommand."
                 default: op
               iprotector.command.area.delete:
                 description: "Allows access to the iProtector delete subcommand."
-                default: op
+                default: Guest
               iprotector.command.area.whitelist:
                 description: "Allows access to the iProtector whitelist subcommand."
-                default: op
+                default: Guest
