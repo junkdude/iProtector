@@ -20,7 +20,7 @@ permissions:
         default: op
       iprotector.command:
         description: "Allows access to all iProtector commands."
-        default: false
+        default: true
         children:
           iprotector.command.area:
             description: "Allows access to the area command."
